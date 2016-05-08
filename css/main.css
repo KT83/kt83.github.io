@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5 ,h6{
 }
 
 h1              { font-size: 2em; margin: .67em 0 }
-h2              { font-size: 1.5em; margin: .75em 0 }
+h2              { font-size: 1.5em; margin: .75em 0; }
 h3              { font-size: 1.17em; margin: .83em 0 }
 h5              { font-size: .83em; margin: 1.5em 0 }
 h6              { font-size: .75em; margin: 1.67em 0 }
@@ -265,50 +265,9 @@ header.dark nav ul li a:hover{
   margin-bottom: 50px;
 }
 
-
-/*    Services    */
-.services ul{
-    margin-top: 100px;
+.divider img{
+  width: 40%;
 }
-
-.services ul li{
-    list-style: none;
-    display: block;
-    width: 313px;
-    float: left;
-    margin-left: 80px;
-    text-align: center;
-}
-
-.services ul li:first-child{
-    margin-left: 0;
-}
-
-.services ul li .separator{
-    display: block;
-    width: 1px;
-    height: 20px;
-    background: #f6f6f6;
-    margin: 20px auto;
-}
-
-.services ul li h2{
-    color: #616161;
-    font-family: "raleway-bold";
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.services ul li p{
-   color: #838181;
-    font-family: "raleway-regular";
-    font-size: 14px;
-    line-height: 28px;
-    margin-top: 40px;
-    letter-spacing: .5px;
-}
-
 
 
 .title{
