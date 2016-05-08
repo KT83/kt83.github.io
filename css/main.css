@@ -252,15 +252,17 @@ header.dark nav ul li a:hover{
 
 /*    devider    */
 
-.devider{
+.divider{
   float: center;
 }
 
-.devider.image {
-	width: 100%;
+.divider .image_container {
 	height: auto;
+  text-align: center;
+  vertical-align:middle;
 
 	margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 
