@@ -62,12 +62,15 @@
 
 
 /*  General CSS*/
+html,body { height:100%; }
+
 body{
     background: #fff;
+    clear:both;
 }
 
 .wrapper{
-    width: 1100px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -99,19 +102,15 @@ h5, h6          { font-weight: bolder }
 }
 
 
-
-
-
-
-
 /*    Billboard    */
 .billboard{
     width: 100%;
-    height: 690px;
+    height: 100%;
     position: relative;
 
 		background: url('../img/shizuoka_title.jpg') no-repeat;
 
+    background-position: center 10%;
 		background-size: cover;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -127,6 +126,11 @@ h5, h6          { font-weight: bolder }
     left: 0;
     margin-bottom: -1px;
     background: url('../img/shadow.png') repeat-x;
+}
+
+.billboard img{
+  height: 100%;
+  width: 100%;
 }
 
 .billboard .caption{
@@ -207,6 +211,7 @@ header .logo{
 header nav{
     float: right;
     margin-top: 57px;
+    margin-right: 20px;
 }
 
 
@@ -247,8 +252,12 @@ header.dark nav ul li a:hover{
 
 /*    devider    */
 
+.devider{
+  float: center;
+}
+
 .devider.image {
-	width: 10%;
+	width: 100%;
 	height: auto;
 
 	margin-top: 100px;
@@ -300,47 +309,6 @@ header.dark nav ul li a:hover{
 
 
 
-
-
-
-
-/*    Video    */
-.video{
-    display: block;
-    width: 100%;
-    height: 350px;
-    text-align: center;
-    margin-top: 100px;
-    background: url('../img/video.jpg') no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-.video .video_logo{
-    margin-top: 85px;
-}
-
-.video h3{
-    color: #fff;
-    font-family: "raleway-regular";
-    font-size: 14px;
-    font-weight: normal!important;
-    margin: 20px 0 0 0;
-}
-
-.video #play_btn{
-    display: inline-block;
-    width: 71px;
-    height: 71px;
-    background: url('../img/play_btn.png') no-repeat;
-    margin-top: 40px;
-}
-
-
-
-
 .title{
     text-align: center;
     overflow: hidden;
@@ -377,6 +345,44 @@ header.dark nav ul li a:hover{
 
 
 
+/*    product    */
+.product{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    float: left;
+}
+
+.product ul{
+    margin-top: 70px;
+    list-style: none;
+}
+
+.product .content{
+    margin-top: 70px;
+    list-style: none;
+
+    color: #838181;
+    font-family: "raleway-regular";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: .5px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ecebeb;
+    position: relative;
+}
+
+.product ul li p{
+    color: #838181;
+    font-family: "raleway-regular";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: .5px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ecebeb;
+    position: relative;
+}
 
 
 /*    testimonials    */
@@ -462,85 +468,11 @@ header.dark nav ul li a:hover{
 
 
 
-
-
-
-/*    blog posts    */
-.blog_posts{
-    margin-top: 100px;
-    padding: 100px 0;
-    background: #fafafa;
-}
-
-.blog_posts ul{
-    list-style: none;
-    margin-top: 70px;
-}
-
-.blog_posts ul li{
-    display: block;
-    width: 230px;
-    margin-left: 60px;
-    float: left;
-}
-
-.blog_posts ul li:first-child{
-    margin-left: 0;
-}
-
-.blog_posts ul li .media .date{
-    position: absolute;
-    top: 0;
-    left: 30px;
-    width: 40px;
-    padding: 10px 0;
-    background: rgba(62, 62, 62, .7);
-    text-align: center;
-}
-
-.blog_posts ul li .media .date span{
-    display: block;
-}
-
-.blog_posts ul li .media .date .day{
-    color: #fff;
-    font-family: "raleway-bold";
-    font-size: 18px;
-    font-weight: bold;
-
-}
-
-.blog_posts ul li .media .date .month{
-    color: #fff;
-    font-family: "raleway-regular";
-    font-size: 12px;
-}
-
-.blog_posts ul li .media{
-    width: 230px;
-    height: 230px;
-    position: relative;
-}
-
-.blog_posts ul li h1{
-    color: #616161;
-    font-family: "raleway-regular";
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 26px;
-    margin: 20px 0 0 0;
-}
-
-
-
-
-
-
-
 /*    footer    */
 footer{
     padding: 35px 0;
     overflow: hidden;
+    float: left;
 }
 
 footer .footer_logo{
