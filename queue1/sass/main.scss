@@ -1,0 +1,183 @@
+@import "compass";
+
+$color_1: black;
+$color_2: white;
+$border : 20px solid $color_1;
+
+@font-face {
+	font-family: 'Futura';
+	src: url(../fonts/Futura/Futura.ttf);
+}
+
+@font-face {
+	font-family: 'Garamond';
+	src: url(../fonts/Garamond/AGaramondPro-Italic.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Ryumin';
+	src: url(../fonts/Ryumin/A-OTF-RyuminPro-Medium.otf) format('opentype');
+}
+
+.content_wrap {
+  padding: 10vh 12vw 0 12vw;
+  position: relative;
+  font-family: 'Ryumin', sans-serif;
+  .content {
+    position: absolute;
+    display: none;
+    padding-right: 15vw;
+    padding-left:  5vw;
+
+    h1{
+      font-family: 'Futura', serif;
+      font-size: calc(3vw+3vh);
+    }
+
+    .paragraph_warp{
+      overflow: scroll;
+      height: 50vh;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 200%;
+      letter-spacing: 6px;
+    }
+  }
+}
+
+#greeting {
+  position: absolute;
+  bottom: -2.2vh;
+  right: 6vw;
+  float: right;
+  text-align: center;
+  animation: fadeIn_menu 5s ease 0s 1 normal;
+  -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
+}
+
+#hello {
+  font-size: 10vw;
+  font-family: 'Garamond', serif;
+  font-style: italic;
+}
+
+#queue {
+  font-family: 'Futura', sans-serif;
+  font-size: 10vw;
+  font-weight: 200;
+}
+
+#tmenu {
+  font-family: 'Futura', sans-serif;
+  font-weight: lighter;;
+  font-size: calc(0.6vw + 0.6vh);
+  float: left;
+  position: fixed;
+  margin: 10vh 0 0 -2vw;
+  animation: fadeIn_menu 5s ease 0s 1 normal;
+  -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
+}
+
+.amenu {
+  color: $color_1;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: block;
+  padding-left: 10vw;
+  padding-right: 1vw;
+  margin-top: 1vh;
+  text-align: left;
+  text-decoration: none;
+  &:hover {
+    background-color: $color_1;
+    color: $color_2;
+  }
+}
+
+tr .selected{
+  background-color: $color_1;
+  color: $color_2;
+}
+
+#square {
+  border: $border;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 90%;
+  width: 90vw;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all  1s ease;
+
+  animation: fadeIn_square 4s ease 0s 1 normal;
+  -webkit-animation: fadeIn_square 4s ease 0s 1 normal;
+}
+
+#square .title {
+  font-size: 1em;
+  &.select {
+    font-size: 12em;
+  }
+}
+
+body {
+  background-color: white;
+}
+
+@keyframes fadeIn_square {
+  0% {
+    background-color: $color_1;
+    height: calc(5vw + 5vh);
+    width: calc(5vw + 5vh);
+    opacity: 0;
+    transform: rotate(-720deg);
+  }
+
+  50% {
+    background-color: $color_1;
+    height: calc(5vw + 5vh);
+    width: calc(5vw + 5vh);
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  75% {
+    background-color: $color_1;
+    height: calc(4vw + 4vh);
+    width: calc(4vw + 4vh);
+    opacity: 1;
+    transform: rotate(0deg);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+    border: $border;
+    height: 90vh;
+    width: 90vw;
+    text-align: center;
+    background-color: rgba(255,255,255,0);
+  }
+}
+
+@keyframes fadeIn_menu {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

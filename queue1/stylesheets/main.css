@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'Futura';
+  src: url(../fonts/Futura/Futura.ttf);
+}
+@font-face {
+  font-family: 'Garamond';
+  src: url(../fonts/Garamond/AGaramondPro-Italic.otf) format("opentype");
+}
+@font-face {
+  font-family: 'Ryumin';
+  src: url(../fonts/Ryumin/A-OTF-RyuminPro-Medium.otf) format("opentype");
+}
+/* line 22, ../sass/main.scss */
+.content_wrap {
+  padding: 10vh 12vw 0 12vw;
+  position: relative;
+  font-family: 'Ryumin', sans-serif;
+}
+/* line 26, ../sass/main.scss */
+.content_wrap .content {
+  position: absolute;
+  display: none;
+  padding-right: 15vw;
+  padding-left: 5vw;
+}
+/* line 32, ../sass/main.scss */
+.content_wrap .content h1 {
+  font-family: 'Futura', serif;
+  font-size: calc(3vw+3vh);
+}
+/* line 37, ../sass/main.scss */
+.content_wrap .content .paragraph_warp {
+  overflow: scroll;
+  height: 50vh;
+}
+/* line 42, ../sass/main.scss */
+.content_wrap .content p {
+  font-size: 24px;
+  line-height: 200%;
+  letter-spacing: 6px;
+}
+
+/* line 50, ../sass/main.scss */
+#greeting {
+  position: absolute;
+  bottom: -2.2vh;
+  right: 6vw;
+  float: right;
+  text-align: center;
+  animation: fadeIn_menu 5s ease 0s 1 normal;
+  -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
+}
+
+/* line 60, ../sass/main.scss */
+#hello {
+  font-size: 10vw;
+  font-family: 'Garamond', serif;
+  font-style: italic;
+}
+
+/* line 66, ../sass/main.scss */
+#queue {
+  font-family: 'Futura', sans-serif;
+  font-size: 10vw;
+  font-weight: 200;
+}
+
+/* line 72, ../sass/main.scss */
+#tmenu {
+  font-family: 'Futura', sans-serif;
+  font-weight: lighter;
+  font-size: calc(0.6vw + 0.6vh);
+  float: left;
+  position: fixed;
+  margin: 10vh 0 0 -2vw;
+  animation: fadeIn_menu 5s ease 0s 1 normal;
+  -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
+}
+
+/* line 83, ../sass/main.scss */
+.amenu {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: block;
+  padding-left: 10vw;
+  padding-right: 1vw;
+  margin-top: 1vh;
+  text-align: left;
+  text-decoration: none;
+}
+/* line 93, ../sass/main.scss */
+.amenu:hover {
+  background-color: black;
+  color: white;
+}
+
+/* line 99, ../sass/main.scss */
+tr .selected {
+  background-color: black;
+  color: white;
+}
+
+/* line 104, ../sass/main.scss */
+#square {
+  border: 20px solid black;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 90%;
+  width: 90vw;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all  1s ease;
+  animation: fadeIn_square 4s ease 0s 1 normal;
+  -webkit-animation: fadeIn_square 4s ease 0s 1 normal;
+}
+
+/* line 123, ../sass/main.scss */
+#square .title {
+  font-size: 1em;
+}
+/* line 125, ../sass/main.scss */
+#square .title.select {
+  font-size: 12em;
+}
+
+/* line 130, ../sass/main.scss */
+body {
+  background-color: white;
+}
+
+@keyframes fadeIn_square {
+  0% {
+    background-color: black;
+    height: calc(5vw + 5vh);
+    width: calc(5vw + 5vh);
+    opacity: 0;
+    transform: rotate(-720deg);
+  }
+  50% {
+    background-color: black;
+    height: calc(5vw + 5vh);
+    width: calc(5vw + 5vh);
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  75% {
+    background-color: black;
+    height: calc(4vw + 4vh);
+    width: calc(4vw + 4vh);
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+    border: 20px solid black;
+    height: 90vh;
+    width: 90vw;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+@keyframes fadeIn_menu {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
