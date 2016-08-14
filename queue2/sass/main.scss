@@ -22,7 +22,7 @@ $border : 20px solid $color_1;
 .content_wrap {
   padding: 10vh 12vw 0 12vw;
   position: relative;
-  font-family: 'Ryumin', sans-serif;
+  font-family: 'Ryumin', serif;
   .content {
     position: absolute;
     display: none;
@@ -34,10 +34,10 @@ $border : 20px solid $color_1;
       font-size: calc(3vw+3vh);
     }
 
-    .paragraph_warp{
-      overflow: scroll;
-      height: 50vh;
-    }
+    // .paragraph_warp{
+    //   overflow: scroll;
+    //   height: 50vh;
+    // }
 
     p {
       font-size: 24px;
@@ -67,6 +67,10 @@ $border : 20px solid $color_1;
   font-family: 'Futura', sans-serif;
   font-size: 10vw;
   font-weight: 200;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all  1s ease;
 }
 
 #tmenu {
@@ -129,6 +133,7 @@ tr .selected{
 
 body {
   background-color: white;
+  position: relative;
 }
 
 @keyframes fadeIn_square {
