@@ -1,6 +1,5 @@
 $(function() {
   $('#tmenu td').click(function(){
-    $('#hello').fadeOut();
     var selectedClassStr = 'selected';
     var content_id = '#content_' + this.id;
     $('#tmenu').find('a').removeClass(selectedClassStr);
