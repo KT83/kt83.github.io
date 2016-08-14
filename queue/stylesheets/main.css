@@ -6,10 +6,31 @@
   font-family: 'Garamond';
   src: url(../fonts/Garamond/AGaramondPro-Italic.otf) format("opentype");
 }
-/* line 17, ../sass/main.scss */
+@font-face {
+  font-family: 'Ryumin';
+  src: url(../fonts/Ryumin/A-OTF-RyuminPro-Medium.otf) format("opentype");
+}
+/* line 22, ../sass/main.scss */
+.content_wrap {
+  padding: 5vw 0 0 12vw;
+  position: relative;
+  font-family: 'Ryumin', sans-serif;
+}
+/* line 26, ../sass/main.scss */
+.content_wrap .content {
+  position: absolute;
+  display: none;
+}
+/* line 30, ../sass/main.scss */
+.content_wrap .content h1 {
+  font-family: 'Futura', serif;
+  font-size: calc(3vw+3vh);
+}
+
+/* line 37, ../sass/main.scss */
 #greeting {
   position: absolute;
-  bottom: -2.6vh;
+  bottom: -2.2vh;
   right: 6vw;
   float: right;
   text-align: center;
@@ -17,56 +38,57 @@
   -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
 }
 
-/* line 27, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 #hello {
   font-size: 10vw;
   font-family: 'Garamond', serif;
   font-style: italic;
 }
 
-/* line 33, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 #queue {
   font-family: 'Futura', sans-serif;
   font-size: 10vw;
   font-weight: 200;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 #tmenu {
   font-family: 'Futura', sans-serif;
   font-weight: lighter;
   font-size: calc(0.6vw + 0.6vh);
   float: left;
   position: fixed;
-  margin: 5vw 0 0 0;
+  margin: 5vw 0 0 -2vw;
   animation: fadeIn_menu 5s ease 0s 1 normal;
   -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
 }
 
-/* line 51, ../sass/main.scss */
-#main {
-  padding-left: 240px;
-}
-
-/* line 55, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 .amenu {
   color: black;
   font-weight: bold;
   font-size: 1.5em;
   display: block;
-  padding-left: 8vw;
+  padding-left: 10vw;
   padding-right: 1vw;
   margin-top: 1vh;
   text-align: left;
   text-decoration: none;
 }
-/* line 65, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 .amenu:hover {
   background-color: black;
   color: white;
 }
 
-/* line 71, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
+tr .selected {
+  background-color: black;
+  color: white;
+}
+
+/* line 91, ../sass/main.scss */
 #square {
   border: 20px solid black;
   bottom: 0;
@@ -85,16 +107,16 @@
   -webkit-animation: fadeIn_square 4s ease 0s 1 normal;
 }
 
-/* line 90, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 #square .title {
   font-size: 1em;
 }
-/* line 92, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 #square .title.select {
   font-size: 12em;
 }
 
-/* line 97, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 body {
   background-color: white;
 }

@@ -14,9 +14,29 @@ $border : 20px solid $color_1;
 	src: url(../fonts/Garamond/AGaramondPro-Italic.otf) format('opentype');
 }
 
+@font-face {
+	font-family: 'Ryumin';
+	src: url(../fonts/Ryumin/A-OTF-RyuminPro-Medium.otf) format('opentype');
+}
+
+.content_wrap {
+  padding: 5vw 0 0 12vw;
+  position: relative;
+  font-family: 'Ryumin', sans-serif;
+  .content {
+    position: absolute;
+    display: none;
+
+    h1{
+      font-family: 'Futura', serif;
+      font-size: calc(3vw+3vh);
+    }
+  }
+}
+
 #greeting {
   position: absolute;
-  bottom: -2.6vh;
+  bottom: -2.2vh;
   right: 6vw;
   float: right;
   text-align: center;
@@ -42,14 +62,9 @@ $border : 20px solid $color_1;
   font-size: calc(0.6vw + 0.6vh);
   float: left;
   position: fixed;
-  //width: 12vw;
-  margin: 5vw 0 0 0;
+  margin: 5vw 0 0 -2vw;
   animation: fadeIn_menu 5s ease 0s 1 normal;
   -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
-}
-
-#main {
-  padding-left: 240px;
 }
 
 .amenu {
@@ -57,7 +72,7 @@ $border : 20px solid $color_1;
   font-weight: bold;
   font-size: 1.5em;
   display: block;
-  padding-left: 8vw;
+  padding-left: 10vw;
   padding-right: 1vw;
   margin-top: 1vh;
   text-align: left;
@@ -66,6 +81,11 @@ $border : 20px solid $color_1;
     background-color: $color_1;
     color: $color_2;
   }
+}
+
+tr .selected{
+  background-color: $color_1;
+  color: $color_2;
 }
 
 #square {
