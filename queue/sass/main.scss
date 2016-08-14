@@ -13,6 +13,7 @@ $border_2 : 20px solid $color_1;
 @font-face {
 	font-family: 'Garamond';
 	src: url(../fonts/Garamond/AGaramondPro-Italic.otf) format('opentype');
+	src: url(../fonts/Garamond/AGaramondPro-Regular.otf) format('opentype');
 }
 
 @font-face {
@@ -30,7 +31,7 @@ body {
 }
 
 .content_wrap {
-  padding:5vh 12vw 0 12vw;
+  padding:5vh 6vw 0 12vw;
   position: relative;
   font-family: 'Ryumin', serif;
   .content {
@@ -40,8 +41,12 @@ body {
     padding-left:  5vw;
 
     h1{
-      font-family: 'Futura', serif;
+      font-family: 'Garamond', serif;
       font-size: calc(3vw+3vh);
+
+			#queue{
+				font-family: 'Futura', sans-serif;
+			}
     }
 
     .paragraph_warp{
@@ -81,11 +86,15 @@ body {
   font-weight: 200;
 	position: relative;
 	top: 0;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all  1s ease;
 }
 
 #tmenu {
-  font-family: 'Futura', sans-serif;
-  font-weight: lighter;;
+  font-family: 'Garamond', serif;
+  font-weight: lighter;
   font-size: calc(0.6vw + 0.6vh);
   float: left;
   position: fixed;
