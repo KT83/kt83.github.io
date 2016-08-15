@@ -9,60 +9,61 @@
 @font-face {
   font-family: 'Garamond';
   src: url(../fonts/Garamond/AGaramondPro-Italic.otf) format("opentype");
-  src: url(../fonts/Garamond/AGaramondPro-Regular.otf) format("opentype");
 }
 @font-face {
   font-family: 'Ryumin';
   src: url(../fonts/Ryumin/A-OTF-RyuminPro-Medium.otf) format("opentype");
+  src: url(../fonts/Ryumin/A-OTF-RyuminPro-Regular.otf) format("opentype");
+  src: url(../fonts/Ryumin/A-OTF-RyuminPro-Light.otf) format("opentype");
 }
-/* line 29, ../sass/main.scss */
+/* line 31, ../sass/main.scss */
 html {
   height: 100%;
 }
 
-/* line 33, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 body {
   height: 100%;
   background-color: white;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 39, ../sass/main.scss */
+  /* line 41, ../sass/main.scss */
   .content_wrap {
     padding: 5vh 6vw 0 12vw;
     position: relative;
     font-family: 'Ryumin', serif;
   }
-  /* line 43, ../sass/main.scss */
+  /* line 45, ../sass/main.scss */
   .content_wrap .content {
     position: absolute;
     display: none;
     padding-right: 15vw;
     padding-left: 5vw;
   }
-  /* line 49, ../sass/main.scss */
+  /* line 51, ../sass/main.scss */
   .content_wrap .content h1 {
     font-family: 'Futura-Oblique', sans-serif;
     letter-spacing: 2px;
     font-size: calc(3vw+3vh);
   }
-  /* line 54, ../sass/main.scss */
+  /* line 56, ../sass/main.scss */
   .content_wrap .content h1 #queue {
     font-family: 'Futura', sans-serif;
   }
-  /* line 59, ../sass/main.scss */
+  /* line 61, ../sass/main.scss */
   .content_wrap .content .paragraph_warp {
     overflow: scroll;
     height: 60vh;
   }
-  /* line 64, ../sass/main.scss */
+  /* line 66, ../sass/main.scss */
   .content_wrap .content p {
     font-size: 18px !important;
     line-height: 250%;
     letter-spacing: 6px;
   }
 
-  /* line 72, ../sass/main.scss */
+  /* line 74, ../sass/main.scss */
   #greeting {
     font-size: calc(6vw + 4vh);
     position: absolute;
@@ -75,7 +76,7 @@ body {
     -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
   }
 
-  /* line 84, ../sass/main.scss */
+  /* line 86, ../sass/main.scss */
   #hello {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -83,7 +84,7 @@ body {
     top: 0;
   }
 
-  /* line 91, ../sass/main.scss */
+  /* line 93, ../sass/main.scss */
   #queue {
     font-family: 'Futura', sans-serif;
     font-weight: 200;
@@ -95,7 +96,7 @@ body {
     transition: all  1s ease;
   }
 
-  /* line 102, ../sass/main.scss */
+  /* line 104, ../sass/main.scss */
   #tmenu {
     font-family: 'Futura-Oblique', sans-serif;
     font-size: calc(0.6vw + 0.6vh);
@@ -107,7 +108,7 @@ body {
     -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
   }
 
-  /* line 113, ../sass/main.scss */
+  /* line 115, ../sass/main.scss */
   .amenu {
     color: black;
     font-size: 1.5em;
@@ -119,19 +120,19 @@ body {
     text-align: left;
     text-decoration: none;
   }
-  /* line 123, ../sass/main.scss */
+  /* line 125, ../sass/main.scss */
   .amenu:hover {
     background-color: black;
     color: white;
   }
 
-  /* line 129, ../sass/main.scss */
+  /* line 131, ../sass/main.scss */
   tr .selected {
     background-color: black;
     color: white;
   }
 
-  /* line 134, ../sass/main.scss */
+  /* line 136, ../sass/main.scss */
   #square {
     border: 20px solid black;
     bottom: 0;
@@ -182,11 +183,11 @@ body {
       background-color: rgba(255, 255, 255, 0);
     }
   }
-  /* line 186, ../sass/main.scss */
+  /* line 188, ../sass/main.scss */
   #square .title {
     font-size: 1em;
   }
-  /* line 188, ../sass/main.scss */
+  /* line 190, ../sass/main.scss */
   #square .title.select {
     font-size: 12em;
   }
@@ -204,18 +205,16 @@ body {
   }
 }
 @media screen and (max-width: 959px) {
-  /* line 210, ../sass/main.scss */
+  /* line 212, ../sass/main.scss */
   .content_wrap {
-    padding: 5vh 6vw 0 12vw;
+    padding: 5vh 10vw 0 10vw;
     position: relative;
     font-family: 'Ryumin', serif;
   }
-  /* line 214, ../sass/main.scss */
+  /* line 216, ../sass/main.scss */
   .content_wrap .content {
     position: absolute;
     display: none;
-    padding-right: 15vw;
-    padding-left: 5vw;
   }
   /* line 220, ../sass/main.scss */
   .content_wrap .content h1 {
@@ -230,7 +229,7 @@ body {
   /* line 230, ../sass/main.scss */
   .content_wrap .content .paragraph_warp {
     overflow: scroll;
-    height: 60vh;
+    height: 70vh;
   }
   /* line 235, ../sass/main.scss */
   .content_wrap .content p {
@@ -241,14 +240,12 @@ body {
 
   /* line 243, ../sass/main.scss */
   #greeting {
-    font-size: 8vw;
+    font-size: 10vw;
     position: absolute;
-    bottom: 2vh;
+    bottom: 4vh;
     right: 6vw;
     float: right;
     text-align: center;
-    animation: fadeIn_menu 5s ease 0s 1 normal;
-    -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
   }
 
   /* line 254, ../sass/main.scss */
@@ -273,17 +270,16 @@ body {
 
   /* line 272, ../sass/main.scss */
   #tmenu {
+    display: none;
     font-family: 'Futura-Oblique', sans-serif;
-    font-size: calc(0.6vw + 0.6vh);
+    font-size: 4vw;
     letter-spacing: 3px;
     float: left;
     position: fixed;
     margin: 10vh 0 0 -2vw;
-    animation: fadeIn_menu 5s ease 0s 1 normal;
-    -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
   }
 
-  /* line 283, ../sass/main.scss */
+  /* line 284, ../sass/main.scss */
   .amenu {
     color: black;
     font-size: 1.5em;
@@ -295,19 +291,19 @@ body {
     text-align: left;
     text-decoration: none;
   }
-  /* line 293, ../sass/main.scss */
+  /* line 294, ../sass/main.scss */
   .amenu:hover {
     background-color: black;
     color: white;
   }
 
-  /* line 299, ../sass/main.scss */
+  /* line 300, ../sass/main.scss */
   tr .selected {
     background-color: black;
     color: white;
   }
 
-  /* line 304, ../sass/main.scss */
+  /* line 305, ../sass/main.scss */
   #square {
     border: 12px solid black;
     bottom: 0;
@@ -322,8 +318,6 @@ body {
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all  1s ease;
-    animation: fadeIn_square 4s ease 0s 1 normal;
-    -webkit-animation: fadeIn_square 4s ease 0s 1 normal;
   }
 
   @keyframes fadeIn_square {
@@ -335,12 +329,6 @@ body {
     }
     50% {
       background-color: black;
-      height: calc(5vw + 5vh);
-      width: calc(5vw + 5vh);
-      opacity: 1;
-    }
-    75% {
-      background-color: black;
       height: calc(4vw + 4vh);
       width: calc(4vw + 4vh);
       opacity: 1;
@@ -348,40 +336,7 @@ body {
     }
     100% {
       opacity: 1;
-      transform: rotate(0deg);
       border: 12px solid black;
-      height: 90vh;
-      width: 90vw;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0);
-    }
-  }
-  @keyframes fadeIn_square {
-    0% {
-      background-color: black;
-      height: calc(5vw + 5vh);
-      width: calc(5vw + 5vh);
-      opacity: 0;
-      transform: rotate(-720deg);
-    }
-    50% {
-      background-color: black;
-      height: calc(5vw + 5vh);
-      width: calc(5vw + 5vh);
-      opacity: 1;
-      transform: rotate(0deg);
-    }
-    75% {
-      background-color: black;
-      height: calc(4vw + 4vh);
-      width: calc(4vw + 4vh);
-      opacity: 1;
-      transform: rotate(0deg);
-    }
-    100% {
-      opacity: 1;
-      transform: rotate(0deg);
-      border: 20px solid black;
       height: 90vh;
       width: 90vw;
       text-align: center;

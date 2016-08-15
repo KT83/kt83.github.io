@@ -18,12 +18,14 @@ $border_2 : 20px solid $color_1;
 @font-face {
 	font-family: 'Garamond';
 	src: url(../fonts/Garamond/AGaramondPro-Italic.otf) format('opentype');
-	src: url(../fonts/Garamond/AGaramondPro-Regular.otf) format('opentype');
+	//src: url(../fonts/Garamond/AGaramondPro-Regular.otf) format('opentype');
 }
 
 @font-face {
 	font-family: 'Ryumin';
 	src: url(../fonts/Ryumin/A-OTF-RyuminPro-Medium.otf) format('opentype');
+	src: url(../fonts/Ryumin/A-OTF-RyuminPro-Regular.otf) format('opentype');
+	src: url(../fonts/Ryumin/A-OTF-RyuminPro-Light.otf) format('opentype');
 }
 
 html {
@@ -208,14 +210,12 @@ body {
 
 @media screen and (max-width: 959px) {
 	.content_wrap {
-		padding:5vh 6vw 0 12vw;
+		padding: 5vh 10vw 0 10vw;
 		position: relative;
 		font-family: 'Ryumin', serif;
 		.content {
 			position: absolute;
 			display: none;
-			padding-right: 15vw;
-			padding-left:  5vw;
 
 			h1{
 				font-family: 'Futura-Oblique', sans-serif;
@@ -229,7 +229,7 @@ body {
 
 			.paragraph_warp{
 				overflow: scroll;
-				height: 60vh;
+				height: 70vh;
 			}
 
 			p {
@@ -241,14 +241,14 @@ body {
 	}
 
 	#greeting {
-		font-size: 8vw;
+		font-size: 10vw;
 		position: absolute;
-		bottom: 2vh;
+		bottom: 4vh;
 		right: 6vw;
 		float: right;
 		text-align: center;
-		animation: fadeIn_menu 5s ease 0s 1 normal;
-		-webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
+		//animation: fadeIn_menu 5s ease 0s 1 normal;
+		//-webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
 	}
 
 	#hello {
@@ -270,14 +270,15 @@ body {
 	}
 
 	#tmenu {
+		display: none;
 		font-family: 'Futura-Oblique', sans-serif;
-		font-size: calc(0.6vw + 0.6vh);
+		font-size: 4vw;
 		letter-spacing: 3px;
 		float: left;
 		position: fixed;
 		margin: 10vh 0 0 -2vw;
-		animation: fadeIn_menu 5s ease 0s 1 normal;
-		-webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
+		//animation: fadeIn_menu 5s ease 0s 1 normal;
+		//-webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
 	}
 
 	.amenu {
@@ -316,8 +317,8 @@ body {
 	  -o-transition: all 1s ease;
 	  transition: all  1s ease;
 
-	  animation: fadeIn_square 4s ease 0s 1 normal;
-	  -webkit-animation: fadeIn_square 4s ease 0s 1 normal;
+	  //animation: fadeIn_square 2s ease 0s 1 normal;
+	  //-webkit-animation: fadeIn_square 2s ease 0s 1 normal;
 	}
 
 	@keyframes fadeIn_square {
@@ -331,14 +332,6 @@ body {
 
 	  50% {
 	    background-color: $color_1;
-	    height: calc(5vw + 5vh);
-	    width: calc(5vw + 5vh);
-	    opacity: 1;
-	    //transform: rotate(0deg);
-	  }
-
-	  75% {
-	    background-color: $color_1;
 	    height: calc(4vw + 4vh);
 	    width: calc(4vw + 4vh);
 	    opacity: 1;
@@ -348,45 +341,12 @@ body {
 
 	  100% {
 	    opacity: 1;
-	    transform: rotate(0deg);
 	    border: $border_1;
 	    height: 90vh;
 	    width: 90vw;
 	    text-align: center;
 	    background-color: rgba(255,255,255,0);
 	  }
-	}
-	@keyframes fadeIn_square {
-		0% {
-			background-color: $color_1;
-			height: calc(5vw + 5vh);
-			width: calc(5vw + 5vh);
-			opacity: 0;
-			transform: rotate(-720deg);
-		}
-		50% {
-			background-color: $color_1;
-			height: calc(5vw + 5vh);
-			width: calc(5vw + 5vh);
-			opacity: 1;
-			transform: rotate(0deg);
-		}
-		75% {
-			background-color: $color_1;
-			height: calc(4vw + 4vh);
-			width: calc(4vw + 4vh);
-			opacity: 1;
-			transform: rotate(0deg);
-		}
-		100% {
-			opacity: 1;
-			transform: rotate(0deg);
-			border: $border_2;
-			height: 90vh;
-			width: 90vw;
-			text-align: center;
-			background-color: rgba(255,255,255,0);
-		}
 	}
 
 	@keyframes fadeIn_menu {
